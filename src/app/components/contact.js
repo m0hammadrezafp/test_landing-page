@@ -1,4 +1,4 @@
-import { Container, Box, Button, Stack, Typography } from '@mui/material';
+import { Container, Box, Button, Stack, Typography } from '../mui';
 
 
 const Contact = () => {

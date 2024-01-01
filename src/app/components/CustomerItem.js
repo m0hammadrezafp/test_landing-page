@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Stack, Typography } from '../mui'; 
 
 
 const CustomerItem = (props) => {
@@ -11,7 +11,7 @@ const CustomerItem = (props) => {
                 background: '#fff',
                 width: '100%',
                 minHeight: '300px',
-                padding: { xs: '24px 16px', sm: '50px 44px' } ,
+                padding: { xs: '24px 16px', sm: '50px 44px' },
                 boxSizing: 'border-box',
 
             }}>
@@ -22,24 +22,30 @@ const CustomerItem = (props) => {
                     marginRight: { xs: 0, md: '40px' },
                 }} />
                 <Stack direction="column">
-                    <Typography variant='body1' sx={{
-                        textAlign: { xs: 'center', md: 'unset' },
-                        fontSize:  { xs: '12px', sm: '16px' },
-                        lineHeight: { xs: '22px', sm: '28px' },
-                        color: '#444',
-                        order: { xs: 2, md: 1 }
-                    }}>
+                    <Typography variant='body1'
+                        sx={{
+                            textAlign: { xs: 'center', md: 'unset' },
+                            fontSize: { xs: '12px', sm: '16px' },
+                            lineHeight: { xs: '22px', sm: '28px' },
+                            color: '#444',
+                            order: { xs: 2, md: 1 },
+                            overflow: "hidden",
+                            display: "-webkit-box",
+                            WebkitLineClamp: "5",
+                            lineClamp: 5,
+                            WebkitBoxOrient: "vertical",
+                        }}>
                         {props.opinion}
                     </Typography>
                     <Stack direction="column"
                         sx={{
-                            marginBottom: {xs: '24px', md: '0'},
+                            marginBottom: { xs: '24px', md: '0' },
                             order: { xs: 1, md: 2 },
                             textAlign: { xs: 'center', md: 'unset' }
                         }}>
                         <Typography variant='body2'
                             sx={{
-                                marginTop: {xs: '24px', md: '56px'},
+                                marginTop: { xs: '24px', md: '56px' },
                                 textAlign: { xs: 'center', md: 'unset' }
                             }}
                             fontWeight={700}>

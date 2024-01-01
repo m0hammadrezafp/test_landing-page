@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Stack, Typography } from '../mui';
 
 
 const ServiceItem = (props) => {
@@ -39,7 +39,17 @@ const ServiceItem = (props) => {
                         }
                     }}>
                     <Typography variant='h6' fontWeight={700}>{props.name}</Typography>
-                    <Typography variant='body2' sx={{ textAlign: 'center', fontSize: '12px', lineHeight: '24px', marginTop: '12px' }}>
+                    <Typography variant='body2' sx={{
+                        textAlign: 'center',
+                        fontSize: '12px',
+                        lineHeight: '24px',
+                        marginTop: '12px',
+                        overflow: "hidden",
+                        display: "-webkit-box",
+                        WebkitLineClamp: "2",
+                        lineClamp: 2,
+                        WebkitBoxOrient: "vertical"
+                    }}>
                         اینجا میتوانید کمی در مورد خودتون صحبت و توضیح دهید که چه خدماتی ارائه میدهید
                     </Typography>
                     <Stack direction="row" spacing={1} sx={{ marginTop: '32px', width: '100%', justifyContent: 'center' }}>

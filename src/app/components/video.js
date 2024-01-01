@@ -1,13 +1,12 @@
-import { Container, Box, Typography, Grid } from '@mui/material';
-import { useState } from 'react';
+import { Container, Box, Typography, Grid } from '../mui';
 
 
 const Video = () => {
 
-    const [allDescriptions] = useState([
+    const allDescriptions = [
         'از این زیرعنوان برای اطلاع رسانی به کاربر و آشنایی بیشتر با محصول و خدمات خود استفاده میکنیم. با کلیک بر روی این قسمت میتوانید متن خود را ویرایش کنید',
         'از این زیرعنوان برای اطلاع رسانی به کاربر و آشنایی بیشتر با محصول و خدمات خود استفاده میکنیم. با کلیک بر روی این قسمت میتوانید متن خود را ویرایش کنید',
-    ])
+    ]
 
     const containerStyle = {
         position: 'relative',
@@ -33,8 +32,7 @@ const Video = () => {
                         <Grid item sx={{ display: 'flex', justifyContent: 'center', order: { xs: 2, lg: 1 } }} lg={5}>
                             <Box component={'img'} src='/Group 2.png' alt='img'
                                 sx={{
-                                    width: { xs: '100%', sm: "unset" },
-                                    height: '100%',
+                                    width: '100%',
                                     objectFit: 'contain'
                                 }} />
                         </Grid>

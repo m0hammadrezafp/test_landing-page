@@ -1,11 +1,10 @@
-import { Container, Box, Stack, Typography, Grid } from '@mui/material';
-import { useState } from 'react';
+import { Container, Box, Stack, Typography, Grid } from '../mui';
 import CustomerItem from './CustomerItem';
 
 
 const Customers = () => {
 
-    const [allServices] = useState([
+    const allServices = [
         {
             id: 1,
             img: 'Ellipse 3 (1).png',
@@ -20,16 +19,16 @@ const Customers = () => {
             position: 'عنوان شغل، اسم شرکت',
             opinion: 'این یک پاراگراف است. برای افزودن یا ویرایش متن خود اینجا را کلیک کنید. این متن باید برای گفتن یک داستان مورد استفاده قرار گیرد و کاربران اطلاعات بیشتری بدست آورند.',
         }
-    ]);
+    ]
 
-    const [allCustomers] = useState([
+    const allCustomers = [
         'Isolation_Mode (1).png',
         'Isolation_Mode.png',
         'Union (1).png',
         'Isolation_Mode (1).png',
         'Union (1).png',
         'Isolation_Mode.png'
-    ]);
+    ]
 
     const containerStyle = {
         position: 'relative',

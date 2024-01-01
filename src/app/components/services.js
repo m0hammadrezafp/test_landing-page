@@ -1,11 +1,10 @@
-import { Container, Box, Stack, Typography, Grid } from '@mui/material';
+import { Container, Box, Stack, Typography, Grid } from '../mui';
 import ServiceItem from './ServiceItem';
-import { useState } from 'react';
 
 
 const Services = () => {
 
-    const [allServices] = useState([
+    const allServices = [
         {
             id: 1,
             img: 'Rectangle 2.png',
@@ -27,7 +26,7 @@ const Services = () => {
             color: '#FB874F',
             services: ['IT Solution', 'Web Design'],
         }
-    ]);
+    ]
 
     const containerStyle = {
         position: 'relative',
